@@ -1,1 +1,3 @@
-<?php phpinfo(); ?>
+<?php
+print_r(include_once ("./data.php"));
+?>
