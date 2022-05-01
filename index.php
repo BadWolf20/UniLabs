@@ -22,7 +22,7 @@
     }
 
     function tableFormatter() {
-        require_once 'dbconfig.php';
+        require_once './dbconfig.php';
 //         $db_host = "localhost";
 //        $db_username = "root";
 //        $db_password = "BadWolf";
