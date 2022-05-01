@@ -17,9 +17,9 @@
     $person = mysqli_query($connection, "SELECT * FROM Student WHERE Student.StudentID = 1 LIMIT 1");
     $result = mysqli_query($connection, "SELECT * FROM UniversityGroup");
 
-    if (!$result || !$person) {
-        die("Ошибка запроса к базе данных</br>") . mysqli_error($connection);
-    }
+//    if (!$result || !$person) {
+//        die("Ошибка запроса к базе данных</br>") . mysqli_error($connection);
+//    }
 
     $person - mysqli_fetch_assoc($person);
     echo "Имя: $_GET[StudentId]";
