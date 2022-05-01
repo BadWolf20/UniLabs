@@ -67,16 +67,16 @@
 
         <div class="row mb-4">
             <label class="col-4">Group
-                <select name="GroupId" class="form-control">
+                <select name="GroupID" class="form-control">
                     <?php while ($group = mysqli_fetch_array($result)) : ?>
-                        <option <?= $group["GroupId"] === $person["GroupId"] ? "selected" : "" ?> value="<?=$group["GroupId"] ?>">
+                        <option <?= $group["GroupID"] === $person["GroupID"] ? "selected" : "" ?> value="<?=$group["GroupID"] ?>">
                             <?= $group["Name"] ?>
                         </option>
                     <?php endwhile; ?>
                 </select>
             </label>
         </div>
-        <input type="hidden" name="StudentId" value="<?=$person["StudentId"]?>">
+        <input type="hidden" name="StudentId" value="<?=$person["StudentID"]?>">
         <input type="submit" class="btn btn-primary" value="Save">
     </form>
 </body>
