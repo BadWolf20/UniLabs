@@ -23,7 +23,6 @@
     $StudentID = $_POST["StudentID"];
 
     $result = mysqli_query($connection, "UPDATE Student SET
-                   GroupID = $GroupID,
                    Name = $Name
                    WHERE StudentID = $StudentID");
 
@@ -33,3 +32,4 @@
         header("Location: ./index.php");
         die();
     }
+//GroupID = $GroupID,
