@@ -28,7 +28,7 @@
 
 
 //
-    $person - mysqli_fetch_assoc($person);
+    $person = mysqli_fetch_assoc($person);
 //    foreach ($person as $p) {
 //        echo "Имя-: " . $p["Name"];
 //    }
