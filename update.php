@@ -19,12 +19,12 @@
     $name = $_POST["Name"];
     $Surname = $_POST["Surname"];
     $MiddleName = $_POST["MiddleName"];
-    $GroupID = $_POST["GroupID"];
+    $GroupId = $_POST["GroupId"];
 
-    echo $name . $Surname . $GroupID;
+    echo $name . $Surname . $GroupId;
 
     $result = mysqli_query($connection, "UPDATE Student SET
-    GroupID = 1
+    GroupID = $GroupId
                WHERE StudentID = 1");
 
 //    if (!$result) {
