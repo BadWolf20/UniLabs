@@ -16,15 +16,15 @@
 
 
 
-    $name = $_GET["Name"];
-    $Surname = $_GET["Surname"];
-    $MiddleName = $_GET["MiddleName"];
-    $GroupID = $_GET["GroupID"];
+    $name = $_POST["Name"];
+    $Surname = $_POST["Surname"];
+    $MiddleName = $_POST["MiddleName"];
+    $GroupID = $_POST["GroupID"];
 
     echo $name . $Surname . $GroupID;
 
     $result = mysqli_query($connection, "UPDATE Student SET
-    GroupID = 2
+    GroupID = 1
                WHERE StudentID = 1");
 
 //    if (!$result) {
