@@ -1,18 +1,18 @@
 <?php
-//    $db_host = "localhost";
-//    $db_username = "root";
-//    $db_password = "BadWolf";
-//    $db_database = "Lab7_Uni";
-//
-//    $connection = mysqli_connect($db_host, $db_username, $db_password, $db_database);
-//    if (!$connection) {
-//        die("Ошибка подключения к базе" . $db_host);
-//    }
-//
-//    $bd_select = mysqli_select_db($connection, $db_database);
-//    if (!$bd_select) {
-//        die("Ошибка при выборе бызы даных");
-//    }
+    $db_host = "localhost";
+    $db_username = "root";
+    $db_password = "BadWolf";
+    $db_database = "Lab7_Uni";
+
+    $connection = mysqli_connect($db_host, $db_username, $db_password, $db_database);
+    if (!$connection) {
+        die("Ошибка подключения к базе" . $db_host);
+    }
+
+    $bd_select = mysqli_select_db($connection, $db_database);
+    if (!$bd_select) {
+        die("Ошибка при выборе бызы даных");
+    }
 //
 //    $person = mysqli_query($connection, "SELECT * FROM Student WHERE Student.StudentID = 1 LIMIT 1");
 //    $result = mysqli_query($connection, "SELECT * FROM UniversityGroup");
