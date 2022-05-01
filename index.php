@@ -23,6 +23,11 @@
 
     function tableFormatter() {
 
+        $db_host = "194.58.123.92";
+        $db_username = "root";
+        $db_password = "BadWolf";
+        $db_database = "Lab7_Uni";
+
         echo "<table class='table w-75 table-bordered'>";
         include_once("./dbConfig.php");
 
@@ -31,7 +36,7 @@
             die("Ошибка подключения к базе");
         }
 
-        $bd_select = mysqli_select_db($connection, $bd_database);
+        $bd_select = mysqli_select_db($connection, $db_database);
         if (!$bd_select) {
             die("Ошибка при выборе бызы даных");
         }
