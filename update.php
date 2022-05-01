@@ -23,8 +23,8 @@
 
     echo $name . $Surname . $GroupID;
 
-    $result = mysqli_query($connection, "UPDATE Student s SET
-    s.GroupID = $GroupID
+    $result = mysqli_query($connection, "UPDATE Student SET
+    'GroupID' = $GroupID
                WHERE StudentID = 1");
 
     if (!$result) {
