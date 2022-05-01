@@ -41,7 +41,6 @@
             die("Ошибка при выборе бызы даных");
         }
 
-
         foreach (getDataByQuery($connection, "SELECT * FROM `UniversityGroup`") as $group) {
             echo "<tr><td colspan='3' class='fw-bold table-active'>" . $group[Name] . "</td></tr>";
             foreach (getDataByQuery($connection, "SELECT * FROM `Student` WHERE Student.GroupID = {$group['GroupID']}") as $person) {
@@ -57,10 +56,12 @@
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#0279FD" class="bi bi-person-fill" viewBox="0 0 16 16">
                         <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
                     </svg>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#0279FD" class="bi bi-x-lg" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd" d="M13.854 2.146a.5.5 0 0 1 0 .708l-11 11a.5.5 0 0 1-.708-.708l11-11a.5.5 0 0 1 .708 0Z"/>
-                        <path fill-rule="evenodd" d="M2.146 2.146a.5.5 0 0 0 0 .708l11 11a.5.5 0 0 0 .708-.708l-11-11a.5.5 0 0 0-.708 0Z"/>
-                    </svg>
+                     <a href="delete.php?StudentId= ' . $person["StudentID"] . '">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#0279FD" class="bi bi-x-lg" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M13.854 2.146a.5.5 0 0 1 0 .708l-11 11a.5.5 0 0 1-.708-.708l11-11a.5.5 0 0 1 .708 0Z"/>
+                            <path fill-rule="evenodd" d="M2.146 2.146a.5.5 0 0 0 0 .708l11 11a.5.5 0 0 0 .708-.708l-11-11a.5.5 0 0 0-.708 0Z"/>
+                        </svg>
+                    </a>
                 </td>
                 </tr>';
             }

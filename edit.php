@@ -23,18 +23,10 @@
         return $result;
     }
     $person = getDataByQuery($connection, "SELECT * FROM Student WHERE Student.StudentID = $_GET[StudentId] LIMIT 1");
-//    $person = mysqli_query($connection, "SELECT * FROM Student WHERE Student.StudentID = 1 LIMIT 1");
-     $result = getDataByQuery($connection, "SELECT * FROM UniversityGroup");
+    $result = getDataByQuery($connection, "SELECT * FROM UniversityGroup");
 
 
-//
     $person = mysqli_fetch_assoc($person);
-//    foreach ($person as $p) {
-//        echo "Имя-: " . $p["Name"];
-//    }
-    echo "Имя-: " . $person["Name"];
-    echo "Имя: $_GET[StudentId]";
-
 ?>
 
 <!DOCTYPE html>

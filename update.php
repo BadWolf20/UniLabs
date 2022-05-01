@@ -14,8 +14,6 @@
         die("Ошибка при выборе бызы даных");
     }
 
-
-
     $Name = $_POST["Name"];
     $Surname = $_POST["Surname"];
     $MiddleName = $_POST["MiddleName"];
