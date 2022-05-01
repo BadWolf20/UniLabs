@@ -31,9 +31,9 @@
         echo "<table class='table w-75 table-bordered'>";
         include_once("./dbConfig.php");
 
-        $connection = mysqli_connect($db_host, $db_username, $db_password);
+        $connection = mysqli_connect($db_host, $db_username, $db_password, $db_database);
         if (!$connection) {
-            die("Ошибка подключения к базе");
+            die("Ошибка подключения к базе" . $db_host);
         }
 
         $bd_select = mysqli_select_db($connection, $db_database);
