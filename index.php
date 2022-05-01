@@ -22,14 +22,14 @@
     }
 
     function tableFormatter() {
-
-        $db_host = "localhost";
-        $db_username = "root";
-        $db_password = "BadWolf";
-        $db_database = "Lab7_Uni";
+        require_once 'dbconfig.php';
+//         $db_host = "localhost";
+//        $db_username = "root";
+//        $db_password = "BadWolf";
+//        $db_database = "Lab7_Uni";
 
         echo "<table class='table w-75 table-bordered'>";
-        
+
 
         $connection = mysqli_connect($db_host, $db_username, $db_password, $db_database);
         if (!$connection) {
