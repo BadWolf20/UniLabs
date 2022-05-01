@@ -22,6 +22,7 @@
 //    }
 //
 //    $person - mysqli_fetch_assoc($person);
+    echo "Имя: $_GET[StudentId]";
 //?>
 
 <!DOCTYPE html>
