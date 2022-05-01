@@ -29,7 +29,7 @@
         $db_database = "Lab7_Uni";
 
         echo "<table class='table w-75 table-bordered'>";
-        include_once("./dbConfig.php");
+        
 
         $connection = mysqli_connect($db_host, $db_username, $db_password, $db_database);
         if (!$connection) {
