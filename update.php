@@ -16,16 +16,17 @@
 
 
 
-    $name = $_POST["Name"];
+    $Name = $_POST["Name"];
     $Surname = $_POST["Surname"];
     $MiddleName = $_POST["MiddleName"];
     $GroupID = $_POST["GroupID"];
-
-    echo $name . $Surname . $GroupID;
-
+    
     $result = mysqli_query($connection, "UPDATE Student SET
-    GroupID = $GroupID
-               WHERE StudentID = 1");
+                   Name = $Name,
+                   Surname = $Surname,
+                   MiddleName = $MiddleName,
+                   GroupID = $GroupID
+                   WHERE StudentID = 1");
 
     if (!$result) {
         die("Ошибка запроса к базе данных</br>") . mysqli_error($connection);
@@ -33,8 +34,3 @@
         header("Location: ./index.php");
         die();
     }
-
-
-//'Name' = $_POST[Name],
-//                        'Surname' = $_POST[Surname],
-//                        'MiddleName' = $_POST[MiddleName],
