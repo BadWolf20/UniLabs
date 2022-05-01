@@ -22,7 +22,7 @@
         }
         return $result;
     }
-    $person = getDataByQuery($connection, "SELECT * FROM Student WHERE Student.StudentID = 1 LIMIT 1");
+    $person = getDataByQuery($connection, "SELECT * FROM Student WHERE Student.StudentID = $_GET[StudentId] LIMIT 1");
 //    $person = mysqli_query($connection, "SELECT * FROM Student WHERE Student.StudentID = 1 LIMIT 1");
      $result = getDataByQuery($connection, "SELECT * FROM UniversityGroup");
 
