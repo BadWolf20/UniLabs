@@ -24,6 +24,8 @@
 
     $result = mysqli_query($connection, "UPDATE Student SET
                    Name = '$Name',
+                   Surname = '$Surname',
+                   MiddleName = '$MiddleName',
                    GroupID = $GroupID
                    WHERE StudentID = $StudentID");
 
