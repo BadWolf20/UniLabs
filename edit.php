@@ -31,7 +31,9 @@
 ////    }
 //
 //    $person - mysqli_fetch_assoc($person);
-    echo "Имя-: " . $person["Name"];
+    foreach ($person as $p) {
+        echo "Имя-: " . $p["Name"];
+    }
     echo "Имя: $_GET[StudentId]";
 
 ?>
