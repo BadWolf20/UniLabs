@@ -13,8 +13,8 @@
     if (!$bd_select) {
         die("Ошибка при выборе бызы даных");
     }
-//
-//    $person = mysqli_query($connection, "SELECT * FROM Student WHERE Student.StudentID = 1 LIMIT 1");
+
+    $person = mysqli_query($connection, "SELECT * FROM Student WHERE Student.StudentID = 1 LIMIT 1");
 //    $result = mysqli_query($connection, "SELECT * FROM UniversityGroup");
 //
 //    if (!$result || !$person) {
