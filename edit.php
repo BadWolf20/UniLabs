@@ -24,16 +24,15 @@
     }
     $person = getDataByQuery($connection, "SELECT * FROM Student WHERE Student.StudentID = 1 LIMIT 1");
 //    $person = mysqli_query($connection, "SELECT * FROM Student WHERE Student.StudentID = 1 LIMIT 1");
-//    $result = mysqli_query($connection, "SELECT * FROM UniversityGroup");
+     $result = getDataByQuery($connection, "SELECT * FROM UniversityGroup");
+
+
 //
-////    if (!$result || !$person) {
-////        die("Ошибка запроса к базе данных</br>") . mysqli_error($connection);
-////    }
-//
-//    $person - mysqli_fetch_assoc($person);
-    foreach ($person as $p) {
-        echo "Имя-: " . $p["Name"];
-    }
+    $person - mysqli_fetch_assoc($person);
+//    foreach ($person as $p) {
+//        echo "Имя-: " . $p["Name"];
+//    }
+    echo "Имя-: " . $person["Name"];
     echo "Имя: $_GET[StudentId]";
 
 ?>
