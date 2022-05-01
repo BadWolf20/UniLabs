@@ -27,6 +27,7 @@
 ?>
 
 <!DOCTYPE html>
+<HTML>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset = windows-1251" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
