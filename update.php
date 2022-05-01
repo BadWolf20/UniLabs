@@ -24,7 +24,7 @@
     echo $name . $Surname . $GroupID;
 
     $result = mysqli_query($connection, "UPDATE Student SET
-    'GroupID' = $GroupID
+    GroupID = 1
                WHERE StudentID = 1");
 
     if (!$result) {
