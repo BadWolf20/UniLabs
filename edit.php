@@ -14,6 +14,15 @@
         die("Ошибка при выборе бызы даных");
     }
 
+    function getDataByQuery($connection, $query) {
+        $result = mysqli_query($connection, $query);
+
+        if (!$result) {
+            die("Ошибка запроса к базе данных</br>") . mysqli_error($connection);
+        }
+        return $result;
+    }
+    $person = getDataByQuery($connection, "SELECT * FROM Student WHERE Student.StudentID = 1 LIMIT 1");
 //    $person = mysqli_query($connection, "SELECT * FROM Student WHERE Student.StudentID = 1 LIMIT 1");
 //    $result = mysqli_query($connection, "SELECT * FROM UniversityGroup");
 //
