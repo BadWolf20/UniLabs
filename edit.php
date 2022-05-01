@@ -22,48 +22,49 @@
     }
 
     $person - mysqli_fetch_assoc($person);
+    echo "Имя: $person[Name] <br>";
 ?>
 
-<!DOCTYPE html>
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset = windows-1251" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-          rel="stylesheet"
-          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
-          crossorigin="anonymous">
-</head>
-
-<body class = "container">
-    <form method="post" action="update.php">
-        <div class="row mb-3">
-            <label class="col-4">Name
-                <input type="text" id="Name" class="form-control" name="Name" value="<?= $person["Name"] ?>">
-            </label>
-        </div>
-        <div class="row mb-3">
-            <label class="col-4">Surname
-                <input type="text" id="Surname" class="form-control" name="Surname" value="<?= $person["Surname"] ?>">
-            </label>
-        </div>
-        <div class="row mb-3">
-            <label class="col-4">Middle name
-                <input type="text" id="MiddleName" class="form-control" name="MiddleName" value="<?= $person["MiddleName"] ?>">
-            </label>
-        </div>
-
-        <div class="row mb-4">
-            <label class="col-4">Group
-                <select name="GroupId" class="form-control">
-                    <?php while ($group = mysqli_fetch_array($result)) : ?>
-                        <option <?= $group["GroupId"] === $person["GroupId"] ? "selected" : "" ?> value="<?=$group["GroupId"] ?>">
-                            <?= $group["Name"] ?>
-                        </option>
-                    <?php endwhile; ?>
-                </select>
-            </label>
-        </div>
-        <input type="hidden" name="StudentId" value="<?=$person["StudentId"]?>">
-        <input type="submit" class="btn btn-primary" value="Save">
-    </form>
-</body>
-</html>
+<!--<!DOCTYPE html>-->
+<!--<head>-->
+<!--    <meta http-equiv="Content-Type" content="text/html; charset = windows-1251" />-->
+<!--    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"-->
+<!--          rel="stylesheet"-->
+<!--          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"-->
+<!--          crossorigin="anonymous">-->
+<!--</head>-->
+<!---->
+<!--<body class = "container">-->
+<!--    <form method="post" action="update.php">-->
+<!--        <div class="row mb-3">-->
+<!--            <label class="col-4">Name-->
+<!--                <input type="text" id="Name" class="form-control" name="Name" value="--><?//= $person["Name"] ?><!--">-->
+<!--            </label>-->
+<!--        </div>-->
+<!--        <div class="row mb-3">-->
+<!--            <label class="col-4">Surname-->
+<!--                <input type="text" id="Surname" class="form-control" name="Surname" value="--><?//= $person["Surname"] ?><!--">-->
+<!--            </label>-->
+<!--        </div>-->
+<!--        <div class="row mb-3">-->
+<!--            <label class="col-4">Middle name-->
+<!--                <input type="text" id="MiddleName" class="form-control" name="MiddleName" value="--><?//= $person["MiddleName"] ?><!--">-->
+<!--            </label>-->
+<!--        </div>-->
+<!---->
+<!--        <div class="row mb-4">-->
+<!--            <label class="col-4">Group-->
+<!--                <select name="GroupId" class="form-control">-->
+<!--                    --><?php //while ($group = mysqli_fetch_array($result)) : ?>
+<!--                        <option --><?//= $group["GroupId"] === $person["GroupId"] ? "selected" : "" ?><!-- value="--><?//=$group["GroupId"] ?><!--">-->
+<!--                            --><?//= $group["Name"] ?>
+<!--                        </option>-->
+<!--                    --><?php //endwhile; ?>
+<!--                </select>-->
+<!--            </label>-->
+<!--        </div>-->
+<!--        <input type="hidden" name="StudentId" value="--><?//=$person["StudentId"]?><!--">-->
+<!--        <input type="submit" class="btn btn-primary" value="Save">-->
+<!--    </form>-->
+<!--</body>-->
+<!--</html>-->
