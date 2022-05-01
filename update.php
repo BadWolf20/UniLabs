@@ -23,7 +23,8 @@
     $StudentID = $_POST["StudentID"];
 
     $result = mysqli_query($connection, "UPDATE Student SET
-                   Name = '$Name'
+                   Name = '$Name',
+                   GroupID = $GroupID
                    WHERE StudentID = $StudentID");
 
     if (!$result) {
@@ -32,4 +33,3 @@
         header("Location: ./index.php");
         die();
     }
-//GroupID = $GroupID,
