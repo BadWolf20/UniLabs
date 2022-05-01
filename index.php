@@ -22,11 +22,10 @@
     }
 
     function tableFormatter() {
-        require_once './dbconfig.php';
-//         $db_host = "localhost";
-//        $db_username = "root";
-//        $db_password = "BadWolf";
-//        $db_database = "Lab7_Uni";
+        $db_host = "localhost";
+        $db_username = "root";
+        $db_password = "BadWolf";
+        $db_database = "Lab7_Uni";
 
         echo "<table class='table w-75 table-bordered'>";
 
