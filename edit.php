@@ -36,23 +36,23 @@
 <body class = "container">
     <form method="post" action="update.php">
         <div class="row mb-3">
-            <label class="col-4"> Name
+            <label class="col-4">Name
                 <input type="text" id="Name" class="form-control" name="Name" value="<?= $person["Name"] ?>">
             </label>
         </div>
         <div class="row mb-3">
-            <label class="col-4"> Surname
+            <label class="col-4">Surname
                 <input type="text" id="Surname" class="form-control" name="Surname" value="<?= $person["Surname"] ?>">
             </label>
         </div>
         <div class="row mb-3">
-            <label class="col-4"> Middle name
+            <label class="col-4">Middle name
                 <input type="text" id="MiddleName" class="form-control" name="MiddleName" value="<?= $person["MiddleName"] ?>">
             </label>
         </div>
 
         <div class="row mb-4">
-            <label class="col-4"> Group
+            <label class="col-4">Group
                 <select name="GroupId" class="form-control">
                     <?php while ($group = mysqli_fetch_array($result)) : ?>
                         <option <?= $group["GroupId"] === $person["GroupId"] ? "selected" : "" ?> value="<?=$group["GroupId"] ?>">
@@ -62,7 +62,7 @@
                 </select>
             </label>
         </div>
-        <input type="hidden" name="Id" value="<?=$person["StudentId"]?>">
+        <input type="hidden" name="StudentId" value="<?=$person["StudentId"]?>">
         <input type="submit" class="btn btn-primary" value="Save">
     </form>
 </body>
