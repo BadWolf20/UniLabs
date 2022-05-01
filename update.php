@@ -24,15 +24,15 @@
     echo $name . $Surname . $GroupID;
 
     $result = mysqli_query($connection, "UPDATE Student SET
-    GroupID = 1
+    GroupID = 2
                WHERE StudentID = 1");
 
-    if (!$result) {
-        die("Ошибка запроса к базе данных</br>") . mysqli_error($connection);
-    } else {
-        header("Location: ./index.php");
-        die();
-    }
+//    if (!$result) {
+//        die("Ошибка запроса к базе данных</br>") . mysqli_error($connection);
+//    } else {
+//        header("Location: ./index.php");
+//        die();
+//    }
 
 
 //'Name' = $_POST[Name],
