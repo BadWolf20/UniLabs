@@ -76,7 +76,7 @@
                 </select>
             </label>
         </div>
-        <input type="hidden" name="StudentId" value="<?=$person["StudentID"]?>">
+        <input type="hidden" name="StudentID" value="<?=$person["StudentID"]?>">
         <input type="submit" class="btn btn-primary" value="Save">
     </form>
 </body>

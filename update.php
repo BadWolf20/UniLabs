@@ -20,13 +20,11 @@
     $Surname = $_POST["Surname"];
     $MiddleName = $_POST["MiddleName"];
     $GroupID = $_POST["GroupID"];
+    $StudentID = $_POST["StudentID"];
 
     $result = mysqli_query($connection, "UPDATE Student SET
-                   'Name' = $Name,
-                   'Surname' = $Surname,
-                   'MiddleName' = $MiddleName,
-                   'GroupID' = $GroupID
-                   WHERE StudentID = 1");
+                   GroupID = $GroupID
+                   WHERE StudentID = $StudentID");
 
     if (!$result) {
         die("Ошибка запроса к базе данных</br>") . mysqli_error($connection);
