@@ -15,10 +15,7 @@
     }
 
     $result = mysqli_query($connection, "UPDATE Student SET
-                        Name = $_POST[Name],
-                        Surname = $_POST[Surname],
-                        MiddleName = $_POST[MiddleName],
-                        GroupID = $_POST[GroupId]
+                        GroupID = 2
                         WHERE StudentID = $_POST[StudentId]");
 
     if (!$result) {
@@ -27,3 +24,8 @@
         header("Location: ./index.php");
         die();
     }
+
+
+//'Name' = $_POST[Name],
+//                        'Surname' = $_POST[Surname],
+//                        'MiddleName' = $_POST[MiddleName],
