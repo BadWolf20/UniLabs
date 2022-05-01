@@ -12,14 +12,36 @@
 </html>
 
 <?php
+    function getDataByQuery($connection, $query) {
+        $result = mysqli_query($connection, $query);
+
+        if (!$result) {
+            die("Ошибка запроса к базе данных</br>") . mysqli_error($connection);
+        }
+        return $result;
+    }
+
     function tableFormatter() {
-        $data = (include_once("./data.php"));
+
         echo "<table class='table w-75 table-bordered'>";
-        foreach ($data as $key => $group) {
-            echo "<tr><td colspan='3' class='fw-bold table-active'>" . $key . "</td></tr>";
-            foreach ($group as $person) {
-                echo "<tr><td>" . $person["name"] . "</td>";
-                echo "<td class='text-info'>" . $person["mail"] . "</td>";
+        include_once("./dbConfig.php");
+
+        $connection = mysqli_connect($db_host, $db_username, $db_password);
+        if (!$connection) {
+            die("Ошибка подключения к базе");
+        }
+
+        $bd_select = mysqli_select_db($connection, $bd_database);
+        if (!$bd_select) {
+            die("Ошибка при выборе бызы даных");
+        }
+
+
+        foreach (getDataByQuery($connection, "SELECT * FROM `UniversityGroup`") as $group) {
+            echo "<tr><td colspan='3' class='fw-bold table-active'>" . $group[Name] . "</td></tr>";
+            foreach (getDataByQuery($connection, "SELECT * FROM `Student` WHERE Student.GroupID = {$group['GroupID']}") as $person) {
+                echo "<tr><td>" . $person["Name"] . " " . $person["Surname"] . "</td>";
+                echo "<td class='text-info'>" . $person["Mail"] . "</td>";
                 echo '
                 <td>
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#0279FD" class="bi bi-pencil" viewBox="0 0 16 16">
