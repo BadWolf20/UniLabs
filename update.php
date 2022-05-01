@@ -15,7 +15,7 @@
     }
 
     $result = mysqli_query($connection, "UPDATE Student SET
-    GroupID = $_POST[GroupId],
+    GroupID = '$_POST[GroupId]',
                WHERE StudentID = 1");
 
     if (!$result) {
