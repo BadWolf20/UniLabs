@@ -15,8 +15,8 @@
     }
 
     $result = mysqli_query($connection, "UPDATE Student SET
-                        GroupID = 2
-                        WHERE StudentID = $_POST[StudentId]");
+    GroupID = 2
+               WHERE StudentID = 1");
 
     if (!$result) {
         die("Ошибка запроса к базе данных</br>") . mysqli_error($connection);
