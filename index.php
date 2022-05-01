@@ -14,7 +14,7 @@
 <?php
     function tableFormatter() {
         $data = (include_once("./data.php"));
-        echo "<table class='table w-75 table-bordered>";
+        echo "<table class='table w-75 table-bordered'>";
         foreach ($data as $key => $group) {
             echo "<tr><td colspan='3' class='fw-bold table-active'>" . $key . "</td></tr>";
             foreach ($group as $person) {
