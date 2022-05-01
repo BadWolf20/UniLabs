@@ -23,7 +23,7 @@
     $StudentID = $_POST["StudentID"];
 
     $result = mysqli_query($connection, "UPDATE Student SET
-                   Name = $Name
+                   Name = '$Name'
                    WHERE StudentID = $StudentID");
 
     if (!$result) {
