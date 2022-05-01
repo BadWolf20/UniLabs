@@ -14,8 +14,17 @@
         die("Ошибка при выборе бызы даных");
     }
 
-    $result = mysqli_query($connection, "UPDATE Student SET
-    GroupID = '$_POST[GroupId]',
+
+
+    $name = $_GET["Name"];
+    $Surname = $_GET["Surname"];
+    $MiddleName = $_GET["MiddleName"];
+    $GroupID = $_GET["GroupID"];
+
+    echo $name . $Surname . $GroupID;
+
+    $result = mysqli_query($connection, "UPDATE Student s SET
+    s.GroupID = $GroupID
                WHERE StudentID = 1");
 
     if (!$result) {
