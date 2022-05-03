@@ -1,0 +1,66 @@
+.add input  {
+    width: 250px;
+    height: 36px !important;
+    padding-left: 10px !important;
+    border: 1px solid #29c5e6 !important;
+    border-radius: 5px !important;
+    outline: none !important;
+    background: #fff !important;
+    color: #919191 !important;
+    display: inline-block !important;
+    margin-bottom: 10px !important;
+    margin-left: 40% !important;
+
+}
+textarea {
+    width: 250px !important;
+    padding-left: 10px !important;
+    border: 1px solid #29c5e6 !important;
+    border-radius: 5px !important;
+    outline: none !important;
+    background: #fff !important;
+    color: #919191 !important;
+    display: inline-block !important;
+    margin-bottom: 10px !important;
+    margin-left: 40% !important;
+}
+.add button {
+    margin-left: 10px;
+    top: 0;
+    right: 0px;
+    width: 100px;
+    height: 40px;
+    border: none;
+    background: #29c5e6;
+    border-radius: 5px 5px 5px 5px;
+    margin-left: 46.5%;
+    margin-bottom: 10px;
+}
+.add button:before {
+    content: "Сохранить";
+    font-family: SansSerif;
+    font-size: 16px;
+    color: #F9F0DA;
+}
+
+.add a{
+    font-family: SansSerif;
+    font-size: 16px;
+    color: #29c5e6;
+    margin-left: 47%;
+
+}
+.box select {
+    background: #fff;
+    color: #919191;
+    padding: 12px;
+    width: 250px;
+
+    font-size: 14px;
+    -webkit-appearance: button;
+    outline: none;
+    border: 1px solid #29c5e6;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    margin-left: 40%;
+}

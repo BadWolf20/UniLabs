@@ -1,0 +1,40 @@
+
+.mar
+{
+    margin-left: 20%;
+}
+.rowlabel{
+    margin-bottom: 20px;
+    margin-left: 20%;
+    border: 1px solid #919191;
+    background-color: #e7e7e7;
+    border-radius: 5px;
+}
+
+.rowlabel div {
+    display: inline-block;
+    color: #484747;
+    margin:10px 0px;
+    font: 16px 'Oswald', sans-serif;
+}
+.row div {
+    font: 16px 'Oswald', sans-serif;
+}
+.fa-trash-alt{
+    color: #FFA343;
+    font-size: 24px;
+}
+.fa-edit{
+    color: #FFA343;
+    font-size: 24px;
+}
+.fa-plus-square{
+    color: #FFA343;
+    font-size: 24px;
+}
+
+
+
+
+
+

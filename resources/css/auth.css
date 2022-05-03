@@ -1,0 +1,241 @@
+body {
+    color: #8f8f8f;
+    font: 12px Tahoma, sans-serif;
+    background-color: #f8f8f8;
+    margin: 0;
+}
+input[type="text"] {
+    background-color: #f3f3f3;
+    border: 1px solid #e7e7e7;
+    height: 30px;
+    color: #b2b2b2;
+    padding: 0 10px;
+    vertical-align: top;
+}
+button {
+    color: #fff;
+    background-color: #FFA343;
+    border: none;
+    height: 32px;
+    font-family: 'Oswald', sans-serif;
+}
+p {
+    margin: 20px 0;
+    font-size: 20px;
+}
+#wrapper {
+    max-width: 1260px;
+    margin: auto;
+
+    padding-bottom : 50px;
+}
+header {
+    padding: 20px 0;
+}
+form[name="search"] {
+    float: right;
+}
+nav a {
+    text-decoration: none;
+}
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+nav li {
+    list-style-position: inside;
+    font: 24px 'Oswald', sans-serif;
+    padding: 10px;
+}
+header div{
+    display: inline-block;
+}
+.auth {
+    margin-left: 960px;
+}
+.auth a {
+    margin: 0 10px;
+}
+
+.top-menu li {
+    display: inline-block;
+    padding: 10px 70px;
+    margin: 0;
+}
+.top-menu li.active {
+    background: #FFA343;
+    color: #fff;
+}
+.top-menu a {
+    color: #b2b2b2;
+}
+#heading {
+    background: transparent url(../images/h1-bg.png);
+    margin: 30px 0;
+    padding-left: 50px;
+}
+h1 {
+    display: inline-block;
+    color: #7e7e7e;
+    font: 40px/40px 'Oswald', sans-serif;
+    background: url(../images/bg.png);
+    margin: 0;
+    padding: 0 10px;
+}
+
+
+.authorization input {
+    width: 250px;
+    height: 36px;
+    padding-left: 10px;
+    border: 1px solid #FFA343;
+    border-radius: 5px;
+    outline: none;
+    background: #fff;
+    color: #919191;
+    display: inline-block;
+    margin-bottom: 10px;
+    margin-left: 40%;
+
+}
+.authorization button {
+    margin-left: 10px;
+    top: 0;
+    right: 0px;
+    width: 100px;
+    height: 40px;
+    border: none;
+    background: #FFA343;
+    border-radius: 5px 5px 5px 5px;
+    margin-left: 46.5%;
+    margin-bottom: 10px;
+}
+.authorization button:before {
+    content: "Войти";
+    font-family: SansSerif;
+    font-size: 16px;
+    color: #F9F0DA;
+}
+
+.authorization a{
+    font-family: SansSerif;
+    font-size: 16px;
+    color: #FFA343;
+    margin-left: 47%;
+
+}
+
+
+
+
+
+
+
+footer {
+    background: #7e7e7e;
+    color: #dbdbdb;
+    font-size: 11px;
+
+    position : fixed;
+    height : 110px;
+    width: 100%;
+    bottom : 0;
+}
+#footer {
+    max-width: 960px;
+    margin: auto;
+    padding: 10px 0;
+    height: 90px;
+}
+footer h3 {
+    font: 14px 'Oswald', sans-serif;
+    color: #fff;
+    border-bottom: 1px solid #919191;
+    margin: 0 0 10px 0;
+}
+#twitter time a {
+    color: #b4aeae;
+}
+footer p {
+    margin: 5px 0;
+}
+footer a {
+    color: #dbdbdb;
+}
+#sitemap {
+    width: 160px;
+    float: left;
+    margin-left: 130px;
+    padding-right: 15px;
+}
+#sitemap div {
+    display: inline-block;
+}
+#sitemap div + div {
+    margin-left: 40px;
+}
+#sitemap a {
+    display: block;
+    text-decoration: none;
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+#social {
+    float: left;
+    margin-left: 160px;
+    width: 160px;
+}
+.social-icon {
+    width: 30px;
+    height: 30px;
+    background: url(../images/social.png) no-repeat;
+    display: inline-block;
+    margin-right: 21px;
+}
+.social-icon-small  {
+    width: 16px;
+    height: 16px;
+    background: url(../images/social-small.png) no-repeat;
+    display: inline-block;
+    margin: 5px 12px 0 0;
+}
+.twitter {
+    background-position: 0 0;
+}
+
+.facebook {
+    background-position: -30px 0;
+}
+
+.google-plus {
+    background-position: -60px 0;
+}
+
+.vimeo {
+    background-position: 0 0;
+}
+
+.youtube {
+    background-position: -16px 0;
+}
+
+.flickr {
+    background-position: -32px 0;
+}
+
+.instagram {
+    background-position: -48px 0;
+}
+
+.rss {
+    background-position: -64px 0;
+}
+#footer-logo {
+    float: left;
+    margin-top: 20px;
+    margin-left: 50px;
+    font-size: 10px;
+    text-align: right;
+}
+
+

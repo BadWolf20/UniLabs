@@ -1,0 +1,111 @@
+
+
+
+section {
+    padding-bottom: 90px;
+}
+blockquote {
+    margin: 0;
+    background: #FFA343;
+    padding: 10px 20px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+}
+.search-box{
+    width:870px;
+}
+.search1 {
+    display: inline-block;
+    vertical-align: top;
+}
+.search1 input{
+    width: 620px;
+    height: 32px !important;
+}
+.search2 {
+    display: inline-block;
+    vertical-align: top;
+}
+.search2 button{
+    width: 100px;
+    color: white;
+    vertical-align: center;
+}
+.btn {
+    padding: 0 !important;
+}
+
+blockquote p {
+    color: #fff;
+    font-style: italic;
+    font-size: 33px;
+    margin: 0;
+}
+blockquote cite {
+    display: block;
+    font-size: 20px;
+    font-style: normal;
+    color: #fff;
+    margin: 0;
+    text-align: right;
+}
+figure {
+    display: inline-block;
+    margin: 0;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    vertical-align: top;
+}
+figure img {
+    display: block;
+    border: 1px solid #fff;
+    outline: 1px solid #c9c9c9;
+}
+
+section > figure + figure {
+    margin-left: 10px;
+}
+section > h2 {
+    background: #FFA343;
+    font: 30px 'Oswald', sans-serif;
+    font-weight: 300;
+    color: #fff;
+    padding: 0 10px;
+    margin: 30px 0 0 0;
+}
+figure figcaption {
+    font-size: 16px;
+    font-weight: 300;
+    margin-top: 5px;
+    color: #FFA343 !important;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    width: 210px;
+}
+figure figcaption a {
+    color: #FFA343 !important;
+}
+figure figcaption span {
+    display: block;
+    font-size: 12px;
+    text-align: center;
+    color: #8f8f8f;
+    margin: 0px;
+}
+.team-row figure {
+    margin-top: 20px;
+}
+.team-row figure + figure {
+    margin-left: 43px;
+}
+
+.fa-plus-square{
+    font-size: 34px;
+    color: #FFA343;
+}
+.fa-book{
+    font-size: 34px;
+    color: #FFA343;
+}
+

@@ -1,0 +1,145 @@
+
+header div{
+    display: inline-block;
+}
+header {
+    padding: 20px 0;
+    width: 1260px;
+}
+.auth {
+    margin-left: 750px;
+    vertical-align: top;
+}
+.auth a {
+    margin: 0 10px;
+}
+.fa-sign-in-alt
+{
+    font-size: 50px;
+    color: #29c5e6;
+}
+.fa-sign-out-alt{
+    font-size: 50px;
+    color: #29c5e6;
+    text-align: match-parent;
+}
+.fa-user-circle{
+    font-size: 50px;
+    color: #29c5e6;
+}
+.fa-shopping-bag{
+    font-size: 50px;
+    color: #29c5e6;
+}
+
+.top-menu li {
+    display: inline-block;
+    padding: 10px 70px;
+    margin: 0;
+}
+.top-menu li.active {
+    background: #29c5e6;
+    color: #fff;
+}
+.top-menu a {
+    color: #b2b2b2;
+}
+#heading {
+    background: transparent url(../images/h1-bg.png);
+    margin: 30px 0;
+    padding-left: 50px;
+}
+h1 {
+    display: inline-block;
+    color: #7e7e7e;
+    font: 40px/40px 'Oswald', sans-serif;
+    background: url(../images/bg.png);
+    margin: 0;
+    padding: 0 10px;
+}
+
+
+.authorization input {
+    width: 250px;
+    height: 36px;
+    padding-left: 10px;
+    border: 1px solid #29c5e6;
+    border-radius: 5px;
+    outline: none;
+    background: #fff;
+    color: #919191;
+    display: inline-block;
+    margin-bottom: 10px;
+    margin-left: 40%;
+
+}
+.authorization button {
+    margin-left: 10px;
+    top: 0;
+    right: 0px;
+    width: 100px;
+    height: 40px;
+    border: none;
+    margin-top: 10px;
+    background: #29c5e6;
+    border-radius: 5px 5px 5px 5px;
+    margin-left: 46.5%;
+    margin-bottom: 10px;
+}
+.authorization button:before {
+    font-family: SansSerif;
+    font-size: 16px;
+    color: #F9F0DA;
+}
+.confirm {
+    marign-left: 45%;
+}
+
+.authorization a{
+    font-family: SansSerif;
+    font-size: 16px;
+    color: #29c5e6;
+    margin-left: 47%;
+}
+.text div {
+    font-family: SansSerif;
+    font-size: 16px;
+    margin-left: 40%;
+}
+.box select {
+    background-color: white;
+    color: #919191;
+    width: 295px;
+    height: 34px;
+    -webkit-appearance: button;
+    outline: none;
+    border: 1px solid #29c5e6;
+    border-radius: 5px;
+    margin-left: 40%;
+    font-family: SansSerif;
+    font-size: 16px;
+}
+.address input {
+    background-color: white !important;
+    color: #919191 !important;
+    width: 273px;
+    height: 36px;
+    -webkit-appearance: button;
+    outline: none;
+    border: 1px solid #29c5e6 !important;
+    border-radius: 5px;
+    margin-left: 40%;
+    font-family: SansSerif;
+    font-size: 16px;
+    margin-bottom: 10px;
+
+}
+.mybutton{
+    margin-left: 40%;
+}
+
+
+
+
+
+
